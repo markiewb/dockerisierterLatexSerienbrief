@@ -1,0 +1,74 @@
+\documentclass[11pt,a4paper,ngerman]{g-brief}
+\usepackage[ngerman]{babel}
+\usepackage{fontspec}
+\setmainfont{DejaVu Serif} %Font mit Umlauten
+\usepackage{graphicx}
+\usepackage{ifthen}
+
+
+\lochermarke
+\faltmarken
+\fenstermarken
+\trennlinien
+
+\Name{Max Mustermann}
+\Strasse{Musterallee 99}
+%\Zusatz{Zusatz}
+\Ort{12345 Musterstadt}
+%\Land{Deutschland}
+
+%\RetourAdresse{Mein Name - Stra?e xy a - 87654 Musterstadt}
+%\Postvermerk		{Postvermerk}
+
+\Datum					{5. Juli 2019}
+%\IhrZeichen			{Ihre Zeichen}
+%\IhrSchreiben   {Ihr Schreiben}
+%\MeinZeichen		{Mein Zeichen}
+
+\Gruss					{Mit freundlichen Grüßen}
+\Unterschrift		{Mustermann}
+%\Anlagen				{Infobrosch?re der xy Schule}
+%\Verteiler			{Verteiler}
+
+%\Telefon				{0123 / 45 67 890}
+%\Telefax				{0123 - 45 67 89 9}
+%\HTTP						{www.mathematik-online.org}
+%\EMail					{info@mathematik-online.org}
+%\Bank						{Geld-Bank}
+%\BLZ						{987654321}
+%\Konto					{123123123}
+
+
+
+\newcommand{\brief}[6]
+{
+  \newpage
+  \Adresse{#1\\ #2\\ #3 \\\\ \textbf{#4 #5}}
+  \Anrede{Sehr geehrte Damen und Herren,}
+  \Betreff{Änderung der Bankverbindung für #6}
+
+  %\ifthenelse{\equal{#5}{m}}
+  %{
+  %  \Anrede{Sehr geehrter Herr #2,}
+  %}
+  %{
+  %  \Anrede{Sehr geehrte Frau #2,}
+  %}
+  \begin{g-brief}
+    \enlargethispage{2\baselineskip}
+    meine Bankverbindung hat sich geändert: 
+
+\hspace{2cm}  DE11 1111 1111 1111 1111 11 (BYLADEM1111 XXXXX)
+  
+  Ich bitte um eine schriftliche Bestätigung.
+  
+  \end{g-brief}
+}
+
+
+\begin{document}
+
+\brief{DWS}{}{}{60612}{Frankfurt/Main}{XXX-Vertrag T123456}
+\brief{HUK-COBURG}{}{}{96448}{Coburg}{Auslandsreise-Krankenversicherung 123/123456-X}
+
+\end{document}
