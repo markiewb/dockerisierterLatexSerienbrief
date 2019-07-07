@@ -5,7 +5,7 @@ Dockerisierte Latex-Serienbriefvorlage
 Nutzung
 -----
 
-1. Bearbeiten und Befuellen von `src/main/resourcesserienbrief.tex` mittels beliebigem Texteditor oder IDE.
+1. Bearbeiten und Befuellen von `src/main/resources/serienbrief.tex` mittels beliebigem Texteditor oder IDE.
 2. Generierung der PDF durch Ausfuehrung von `serienbrief.sh`. [Beispiel-Ergebnis](src/main/resources/beispiele/serienbrief.pdf)
 
 Technische Umsetzung
